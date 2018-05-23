@@ -7,7 +7,7 @@ tutorial_name: mapping
 # Introduction to next generation sequencing data mapping
 {:.no_toc}
 
-To map DNA/RNA reads of an experiment to a reference genome is a key step in modern genomic data analysis. With the mapping the reads are assigned to a specific location in the genome and insights like the expression level of genes can be gained.
+To map DNA/RNA reads of an experiment to a reference genome is a key step in modern genomic data analysis. With the mapping, the reads are assigned to a specific location in the genome and insights like the expression level of genes can be gained.
 In the following we will process a dataset with a mapper, 'Bowtie2', and we will visualize the data with the software 'IGV'.
 
 > ### Agenda
@@ -47,7 +47,7 @@ In the following we will process a dataset with a mapper, 'Bowtie2', and we will
 >
 >    > ### {% icon tip %} Tip: Search for tools
 >    >
->    > * Clink into the search field on the left
+>    > * Click into the search field on the left
 >    > * Type **bowtie2**
 >    > * Select **bowtie2**
 >    > * Select the uploaded dataset as the fastq file
@@ -72,7 +72,7 @@ In the following we will process a dataset with a mapper, 'Bowtie2', and we will
 >    >    <details>
 >    >    <summary>Click to view answers</summary>
 >    >    <ol type="1">
->    >    <li>The information given here is a quantity one. We can see how many sequences are aligned. It does not tell us something about the quality.</li>
+>    >    <li>The information given here is quantitative. We can see how many sequences are aligned. It does not tell us about the quality of the sequences.</li>
 >    >    <li>No, only 0.59% of all reads could be mapped.</li>
 >    >    <li>We mapped against the wrong reference genome! </li>
 >    >    </ol>
@@ -83,7 +83,7 @@ In the following we will process a dataset with a mapper, 'Bowtie2', and we will
 > 10. **Bowtie2** {% icon tool %}: Rerun Bowtie2 with the correct reference genome 'Drosophila melanogaster' or short 'dm3'.
 >
 >       > ### {% icon comment %} Comments
->       > - It is a good practice to give the datasets names that are easy to understand.
+>       > - It is good practice to give the datasets names that are easy to understand.
 >       {: .comment}
 >
 {: .hands_on}
@@ -98,13 +98,13 @@ A general description of the user interface of the IGV browser can be read here:
 >
 > 1. **IGV** {% icon tool %}: To display the result in IGV open the IGV browser local on your computer.
 > 2. **Galaxy** {% icon tool %}: Click on the right history panel on the Bowtie2 item.
-> 3. **Galaxy** {% icon tool %}: Choose in the history on the computed Bowtie2 results and click on 'local' at 'display with IGV'.
+> 3. **Galaxy** {% icon tool %}: Choose in the history the computed Bowtie2 results and click on 'local' at 'display with IGV'.
 > 4. **IGV** {% icon tool %}: The BAM file should be opened in the IGV browser and the genome should be loaded automatically.
 >
 >       > ### {% icon tip %} Tip: Get access to more genomes
 >       >
->       >If the genome of your interest is not there check if its
->       >available via "More...". Is this is not the case you can add it manually via the menu
+>       >If your genome of interest is not there check if it is
+>       >available via "More...". If this is not the case you can add it manually via the menu
 >       >"Genomes -> Load Genome from..."
 >       >
 >       > ![alt text](../../images/igv_select_genome.png "Select genome")
@@ -125,7 +125,7 @@ A general description of the user interface of the IGV browser can be read here:
 >       >    <summary>Click to view answers</summary>
 >       >    <ol type="1">
 >       >    <li>If a nucleotide differs from the reference sequence in greater than 20% of quality weighted reads, IGV colors the bar in proportion to the read count of each base.</li>
->       >    <li>They have a mapping quality equal to zero. Interpretation of this mapping quality depends on the mapping aligner as some commonly used aligners use this convention to mark a read with multiple alignments. In such a case, the read also maps to another location with equally good placement. It is also possible the read could not be uniquely placed but the other placements do not necessarily give equally good quality hits.</li>
+>       >    <li>They have a mapping quality equal to zero. Interpretation of this mapping quality depends on the mapping aligner as some commonly-used aligners use this convention to mark a read with multiple alignments. In such a case, the read also maps to another location with equally good placement. It is also possible the read could not be uniquely placed but the other placements do not necessarily give equally good quality hits.</li>
 >       >    <li>There are seven reads. Six have the correct 'T', one read a 'G'.</li>
 >       >    </ol>
 >       >    </details>
@@ -145,12 +145,12 @@ A general description of the user interface of the IGV browser can be read here:
 >
 >       > ### {% icon question %} Questions
 >       >
->       > - How IGV helps you to see that the second dataset is bad?
+>       > - How does IGV help you to see that the second dataset is bad?
 >       >
 >       >    <details>
 >       >    <summary>Click to view answers</summary>
 >       >    <ol type="1">
->       >    <li>White/transparent reads indicate bad mapping quality. Second, IGV shows you the nucleotides in color if they are different in the reference genome.</li>
+>       >    <li>White/transparent reads indicate bad mapping quality. Second, IGV shows you the nucleotides in color if they are different to the reference genome.</li>
 >       >    </ol>
 >       >    </details>
 >       {: .question}
